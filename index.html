@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">MyPortfolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<section id="home" class="home">
+    <div class="home-text">
+        <h1>Hello, I'm <span>Tapasya</span></h1>
+        <h3 class="typing"></h3>
+        <p>I create modern and responsive websites.</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+        <img src="C:\Users\HP\Desktop\PORTFOLIO\profile.jpg" alt="profile">
+        <p>
+            Aspiring Web Developer, motivated to apply technical expertise in professional environments, enhance skills with modern technologies, and contribute to organizational goals.
+        </p>
+    </div>
+</section>
+
+<section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-box">
+        <div class="skill">
+            <p>HTML</p>
+            <div class="progress"><span style="width:90%"></span></div>
+        </div>
+        <div class="skill">
+            <p>CSS</p>
+            <div class="progress"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="progress"><span style="width:65%"></span></div>
+        </div>
+        <div class="skill">
+            <p>Python</p>
+            <div class="progress"><span style="width:75%"></span></div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+        <div class="card">
+            <h3>Typing Speed Test</h3>
+            <p>A website to test typing speed.</p>
+        </div>
+        <div class="card">
+            <h3>Resume Evaluation and Grading System</h3>
+            <p>AI evaluate your resume and give grade to it.</p>
+        </div>
+        <div class="card">
+            <h3>College Website</h3>
+            <p>It shows facility that provided by college.</p>
+        </div>
+        <div class="card">
+            <h3>Travelling Website</h3>
+            <p>It shows the places & their travelling packages,hotels.</p>
+        </div>
+        <div class="card">
+            <h3>Calculator</h3>
+            <p>It performs basic calculations of maths.</p>
+        </div>
+    </div>
+</section>
+<section id="certificates" class="certificates">
+    <h2 class="section-title">My Certificates</h2>
+
+    <div class="certificate-container">
+
+        <div class="certificate-card">
+            <img src="images/cybersecurity.jpeg" alt="Cybersecurity Certificate">
+            <h3>Cybersecurity Course</h3>
+            <p>Completed course of cybersecurity fundamentals.</p>
+            <button onclick="viewCertificate('images/cybersecurity.jpeg')">View</button>
+        </div>
+
+        <div class="certificate-card">
+            <img src="images/datastructure.jpeg" alt="Data Structure in C">
+            <h3>Data Structure in C</h3>
+            <p>Successfully completed Data Structure in C.</p>
+            <button onclick="viewCertificate('images/datastructure.jpeg')">View</button>
+        </div>
+
+        <div class="certificate-card">
+            <img src="images/python.jpeg" alt="Python Certificate">
+            <h3>Python Programming</h3>
+            <p>Certification in Python Programming.</p>
+            <button onclick="viewCertificate('images/python.jpeg')">View</button>
+        </div>
+        <div class="certificate-card">
+            <img src="images/participation.jpeg" alt="Epilson-2024">
+            <h3>Epilson-2024</h3>
+            <p>Certificate of participation in Epilson-2024 the mathematics quiz.</p>
+            <button onclick="viewCertificate('images/participation.jpeg')">View</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Certificate Popup -->
+<div id="certificatePopup" class="popup">
+    <span onclick="closePopup()" class="close">&times;</span>
+    <img id="popupImage">
+</div>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Tapasya Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
